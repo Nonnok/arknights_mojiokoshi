@@ -1,0 +1,60 @@
+html {
+  scroll-behavior: smooth;
+}
+main {
+  margin-top: 72px;
+}
+.mokuji-title {
+  font-size: 24px;
+  color: white;
+  background: black;
+  padding: 24px;
+  text-align: center;
+}
+.mokuji-subtitle {
+  text-align: center;
+  margin: 12px;
+}
+.banners {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* mokuji banner styles */
+/* prologue ep */
+.prologue-ep-container{
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+.prologue-ep-banner {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  background: black;
+  padding: 12px 0;
+}
+/* main ep  */
+.chapter-title {
+  text-align: center;
+  background: black;
+  color: white;
+  margin-top: 24px;
+  padding: .3em;
+}
+.ep-banner {
+  margin: 12px;
+  width: 180px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+}
+/* mokuji banner styles end */
+
+/* banner animations */
+.animation {
+  transition: transform .3s ease;
+}
+.animation:hover {
+  transform: scale(1.1);
+}
+/* banner animations end */

@@ -1,0 +1,221 @@
+.mokuji-title {
+  font-size: 24px;
+  color: white;
+  background: black;
+  padding: 24px;
+  text-align: center;
+}
+
+.top-title-box {
+  position: static;
+  z-index: 1;
+}
+
+/* pagetop link styles */
+.pagetop {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  background: #333;
+  border: solid 2px #fffffe;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.pagetop_arrow {
+  height: 10px;
+  width: 10px;
+  border-top: 3px solid #fffffe;
+  border-right: 3px solid #fffffe;
+  transform: translateY(20%) rotate(-45deg);
+}
+/* pagetop link styles end */
+
+/* back nav list styles */
+.back-nav-list {
+  display: flex;
+}
+.back-nav-list a {
+  height: 1em;
+}
+.backmainmokuji {
+  font-size: 18px;
+  display: block;
+  color: #efefef;
+  background: #333;
+  width: 1em;
+  padding: .45em 5em .45em .3em;
+  margin: 0 0 10px 10px;
+}
+.backhome {
+  background: #333;
+  width: 120px;
+  text-align: center;
+  border-left: black solid 1px;
+}
+.back-icon-shadow {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+}
+/* back nav list styles end */
+
+/* 各章目次 styles */
+.mokuji-main {
+  padding-bottom: 24px;
+}
+.mokuji {
+  display: flex;
+  margin-top: 16px;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.ep {
+  font-size: 28px;
+  color: #333;
+  width: 5em;
+  padding: .3em;
+  text-align: center;
+  background: #efefef;
+  border-top: #333 10px solid;
+  transition: background-color .2s ease;
+  margin: 24px;
+}
+.ep:hover {
+  background-color: silver;
+}
+/* 各章目次 styles end */
+
+/* story styles */
+.ep-main {
+  padding-bottom: 24px;
+}
+
+.ep-title {
+  font-size: 18px;
+  text-align: center;
+  margin: 12px;
+  line-height: 1.3em;
+}
+
+.fightjudgement {
+  display: block;
+  width: 5em;
+  padding: .3em;
+  text-align: center;
+  margin: 12px auto;
+  color: white;
+  background: black;
+}
+
+
+/* body text styles */
+.ep-bodytext{
+  display: block;
+  margin: 14px auto 24px auto;
+  width: 70%;
+}
+.character-name {
+  padding: 0 1em;
+  color: #efefef;
+  background: #333;
+}
+.blowing {
+  background: #efefef;
+  line-break: strict;
+  margin: 12px 0;
+}
+.proposal {
+  padding: 1em
+}
+
+.options {
+  padding: 1em;
+  background: #efefef;
+}
+.options ul {
+  list-style: none;
+}
+.options ul li {
+  margin: .5em;
+  padding: 1em;
+  color: #efefef;
+  background: #333;
+  text-align: center;
+  border: 3px solid #fffffe;
+}
+
+.option-result {
+  margin-top: 12px;
+  color: rgb(8, 151, 203);
+  background: #333;
+  padding: 5px 1em;
+}
+
+.common-story-skip-btn {
+  width: 4em;
+  padding: 5px 1em;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  background: #333;
+  border: 2px solid white;
+}
+/* story styles end */
+
+/* details skip text styles */
+summary {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details {
+  width: 70%;
+  margin: 0 auto;
+}
+details p {
+  font-size: 14px;
+  margin-top: 12px;
+}
+/* details skip text styles end */
+
+/* April styles */
+.april-sub-title {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  font-size: 14px;
+}
+/* April styles end */
+
+/* control button styles */
+.control-btn-container {
+  display: flex;
+  justify-content: space-around;
+}
+.next-story-btn, .previous-story-btn {
+  text-align: center;
+  color: #fefefe;
+  background-color: #333;
+  border: 2px solid white;
+  width: 10em;
+  padding: .5em 0;
+}
+/* control button styles end */
+
+/* responsive styles */
+@media screen and (min-width: 800px) {
+  .pagetop {
+    right: 30px;
+  }
+}
+/* responsive styles end */
