@@ -76,7 +76,6 @@
 }
 .ep {
   font-size: 28px;
-  color: #333;
   width: 5em;
   padding: .3em;
   text-align: center;
@@ -84,6 +83,11 @@
   border-top: #333 10px solid;
   transition: background-color .2s ease;
   margin: 24px;
+}
+.ep a {
+  display: inline-block;
+  color: #333;
+  width: 100%;
 }
 .ep:hover {
   background-color: silver;
