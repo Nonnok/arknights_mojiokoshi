@@ -218,4 +218,15 @@ details p {
     right: 30px;
   }
 }
+@media screen and (max-width: 595px) {
+  main {
+    max-width: 95%;
+  }
+  .ep-bodytext {
+    width: 90%;
+  }
+  .blowing, .option {
+    max-width: 100%;
+  }
+}
 /* responsive styles end */
