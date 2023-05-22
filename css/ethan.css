@@ -43,8 +43,14 @@ main {
 }
 
 .Ethan-img {
+  position: relative;
   height: 75vh;
   width: auto;
+}
+.ethan-voice {
+  width: 20em;
+  left: 12%;
+  bottom: 24%;
 }
 
 @media screen and (max-width: 813px) {
