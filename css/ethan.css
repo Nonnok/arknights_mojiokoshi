@@ -1,0 +1,54 @@
+main {
+  margin-top: 64px;
+  background: silver;
+}
+
+.job .prof-en {
+  font-size: .3px
+}
+.job .prof-jp {
+  font-size: 28px;
+}
+
+.name {
+  color: white;
+  text-shadow: 1px 1px 1px gray;
+}
+.name .prof-en {
+  font-size: 12px;
+}
+.name .prof-jp {
+  font-size: 36px;
+}
+
+.profiles {
+  height: 70vh;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.profiles::-webkit-scrollbar{
+  display: none;
+}
+.ethan-profile {
+  display: flex;
+  justify-content: center;
+}
+.info-title {
+  color: white;
+  background: #333;
+  opacity: .8;
+  margin: .4em 0;
+  padding: 1px 0 2px .5em;
+}
+
+.Ethan-img {
+  height: 75vh;
+  width: auto;
+}
+
+@media screen and (max-width: 813px) {
+  .ethan-profile {
+    flex-wrap: wrap;
+  }
+}

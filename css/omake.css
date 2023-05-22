@@ -1,0 +1,79 @@
+.background {
+  background-image: url(../img/mokujiimage.jpg);
+  height: 80vh;
+  width: 80%;
+  margin: 0 auto;
+  object-fit: scale-down;
+}
+
+.character-box {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  margin-top: 54px;
+  position: relative;
+}
+
+.character-image {
+  width: auto;
+  height: 85vh;
+  text-align: center;
+}
+.voice {
+  position: absolute;
+  bottom: 25%;
+  right: 10%;
+  width: 24em;
+  height: 4em;
+  padding: 1em;
+  color: white;
+  overflow: scroll;
+  margin-top: 50vh;
+  background: rgba(0, 0, 0, .8);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.voice::-webkit-scrollbar{
+  display: none;
+}
+
+/* Ethan link styles */
+.ethan {
+  text-align: center;
+}
+.ethan-button {
+  padding: 12px 24px;
+  background: #a9ceec;
+  text-align: center;
+  width: 6em;
+  border-radius: 5px;
+  margin: 1em auto;
+}
+.ethan-link {
+  display: inline-block;
+  width: 6em;
+  height: 2em;
+  align-items: center;
+}
+
+.ethan-link:hover {
+  transition: .4s;
+  color: #333;
+}
+.english-name {
+  font-size: 6px;
+}
+
+@media screen and (max-width: 810px) {
+  .voice {
+    width: 90%;
+    left: 15%;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 615px) {
+  .background {
+    width: 95%;
+  }
+}

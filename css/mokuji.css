@@ -66,29 +66,94 @@
 .mokuji-main {
   padding-bottom: 24px;
 }
-.mokuji {
-  display: flex;
-  margin-top: 16px;
-  list-style: none;
-  width: 100%;
-  justify-content: center;
-  flex-wrap: wrap;
+
+.operation {
+  margin: 1em;
+  display: grid;
+  color: white;
+  grid-template-columns: 35% auto;
+  width: 75%;
+  margin: 1em auto;
 }
-.ep {
-  color: #333;
-  font-size: 28px;
-  width: 5em;
-  padding: .3em;
-  text-align: center;
-  background: #efefef;
-  border-top: #333 10px solid;
-  transition: background-color .2s ease;
-  margin: 24px;
+.ninmu-gaiyou {
+  padding: 12px;
+  background:rgba(0, 0, 0, .7);
 }
 
-.ep:hover {
-  background-color: silver;
+.story .ep {
+  background:rgba(0, 0, 0, .4);
+  font-size: 16px;
 }
+.ep {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  font-size: 24px;
+  text-align: center;
+  background: black;
+  transition: background-color .2s ease;
+}
+.operation-title {
+  font-size: 16px;
+  padding-left: 6px;
+}
+.ep:hover {
+  background: rgba(0, 0, 0, .7);
+}
+
+.story-title {
+  padding-left: 6px;
+  color: white;
+  font-size: 18px;
+}
+.story-gaiyou {
+  color: #333;
+  padding: 12px;
+  background: #efefef;
+}
+.red-font {
+  color: red;
+}
+
+
+/* short-nav-btn styles */
+.story-short-nav-container {
+  display: flex;
+  justify-content: center;
+}
+.story-short-nav {
+  align-items: center;
+}
+.short-nav-btn {
+  color: white;
+  background: #333;
+  text-align: center;
+  font-size: 16px;
+  height: 3.6em;
+  padding-top: .3em;
+}
+.now-ep {
+  opacity: .5;
+  width: 7em;
+}
+.previous-ep, .next-ep {
+  width: 3em;
+}
+
+.short-btn-ep {
+  font-size: 4px;
+}
+.ep-number {
+  font-size: 20px;
+}
+
+.none-btn {
+  background: white;
+}
+/* short-nav-btn styles end */
+
 /* 各章目次 styles end */
 
 /* story styles */
@@ -228,6 +293,27 @@ details p {
   }
   .blowing, .option {
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .ep-bodytext, details p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .operation {
+    grid-template-columns: 100%;
+  }
+  .ep, .story-title {
+    font-size: 16px;
+  }
+  .operation, .operation-title, .story .ep {
+    font-size: 12px;
+  }
+  .ninmu-gaiyou, .story-gaiyou {
+    height: 3em;
+    padding: 4px 12px;
+    overflow: scroll;
   }
 }
 /* responsive styles end */

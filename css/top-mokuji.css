@@ -3,6 +3,7 @@ html {
 }
 main {
   margin-top: 72px;
+  padding-bottom: 1em;
 }
 .mokuji-title {
   font-size: 24px;
@@ -14,11 +15,6 @@ main {
 .mokuji-subtitle {
   text-align: center;
   margin: 12px;
-}
-.banners {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 /* mokuji banner styles */
@@ -36,15 +32,23 @@ main {
   padding: 12px 0;
 }
 /* main ep  */
+.banners {
+  display: grid;
+  gap: 1em;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 180px);
+}
+.banners a {
+  width: 180px;
+}
 .chapter-title {
-  text-align: center;
-  background: black;
   color: white;
-  margin-top: 24px;
+  background: black;
   padding: .3em;
+  margin: 1.5em 0 1em 0;
+  text-align: center;
 }
 .ep-banner {
-  margin: 12px;
   width: 180px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
 }
@@ -58,3 +62,12 @@ main {
   transform: scale(1.1);
 }
 /* banner animations end */
+
+@media screen and (max-width: 706px) {
+  .banners {
+    grid-template-columns: repeat(auto-fit, 120px);
+  }
+  .ep-banner, .banners a {
+    width:  120px;
+  }
+}

@@ -222,6 +222,16 @@ main {
 }
 /* main styles end */
 
+/* omake link styles */
+.omake-title {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.omake-link {
+  color: #4673ab;
+}
+
+
 /* footer styles */
 footer {
   text-align: center;
@@ -233,8 +243,8 @@ footer {
 /* footer styles end */
 
 /* responsive desing */
-@media screen and (min-width: 973px) {
-}
+/* @media screen and (min-width: 973px) {
+} */
 @media screen and (min-width: 615px) {
   .hamburger-menu {
     display: none;
