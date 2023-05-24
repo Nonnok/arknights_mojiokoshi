@@ -48,7 +48,8 @@ main {
   width: auto;
 }
 .ethan-voice {
-  width: 20em;
+  width: 18em;
+  font-size: 12px;
   left: 12%;
   bottom: 24%;
 }
@@ -56,5 +57,8 @@ main {
 @media screen and (max-width: 813px) {
   .ethan-profile {
     flex-wrap: wrap;
+  }
+  .ethan-voice {
+    width: 20em;
   }
 }
