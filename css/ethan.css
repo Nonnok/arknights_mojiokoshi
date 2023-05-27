@@ -1,6 +1,6 @@
 main {
   margin-top: 64px;
-  background: silver;
+  background: #d3d3d3;
 }
 
 .job .prof-en {
@@ -44,14 +44,48 @@ main {
 
 .Ethan-img {
   position: relative;
-  height: 75vh;
+  height: 630px;
   width: auto;
+  display: block;
+  margin: 0 auto;
 }
 .ethan-voice {
-  width: 18em;
+  width: 24em;
   font-size: 12px;
   left: 12%;
   bottom: 24%;
+}
+
+.hiroku-box {
+  width: 90%;
+  margin: 1em auto;
+}
+.hiroku-title-contents {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: silver;
+  background: #333;
+  opacity: .9;
+  padding: 1em;
+}
+.hiroku-title-item {
+  text-align: left;
+}
+.hiroku {
+  text-align: right;
+}
+.hiroku-title {
+  text-align: center;
+}
+.hiroku-gaiyou {
+  border: 1px #333 solid;
+  display: inline-block;
+  color: black;
+  padding: 12px;
+  font-size: 14px;
+  line-height: 1.2em;
 }
 
 @media screen and (max-width: 813px) {
@@ -59,6 +93,6 @@ main {
     flex-wrap: wrap;
   }
   .ethan-voice {
-    width: 20em;
+    width: 21em;
   }
 }

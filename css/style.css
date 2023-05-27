@@ -18,6 +18,9 @@ body {
 #wrapper {
   min-height: calc(100vh - 18px);
 }
+.red-font {
+  color: red;
+}
 
 /* header styles */
 .top-title-box {
