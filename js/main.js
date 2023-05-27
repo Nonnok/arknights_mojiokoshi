@@ -28,7 +28,7 @@ mask.onclick = () => {
   ];
 
   const face = [
-    'img/character/Amiya/Amiya_default.png',
+    'img/character/Amiya/Amiya_default.PNG',
     "img/character/Amiya/Amiya_default.PNG",
     "img/character/Amiya/Amiya_smile.png",
     "img/character/Amiya/Amiya_serious.png",
