@@ -14,15 +14,15 @@
     "なぁ、ドクター。俺らのことは忘れないでくれよ。特に俺みたいなヤツ、戦場で死んでも気づかれないからな。俺になんかあったら、あんたがなんとかしてくれよ。頼んだぜ。　▼",
   ];
   const face = [
-    "img/character/Ethan/Ethan-default.png",
-    "img/character/Ethan/Ethan-default.png",
-    "img/character/Ethan/Ethan-toboke.png",
-    "img/character/Ethan/Ethan-default.png",
-    "img/character/Ethan/Ethan-ninmari.png",
-    "img/character/Ethan/Ethan-odoroki.png",
-    "img/character/Ethan/Ethan-left.png",
-    "img/character/Ethan/Ethan-tere.png",
-    "img/character/Ethan/Ethan-default.png",
+    "../img/character/Ethan/Ethan-default.png",
+    "../img/character/Ethan/Ethan-default.png",
+    "../img/character/Ethan/Ethan-toboke.png",
+    "../img/character/Ethan/Ethan-default.png",
+    "../img/character/Ethan/Ethan-ninmari.png",
+    "../img/character/Ethan/Ethan-odoroki.png",
+    "../img/character/Ethan/Ethan-left.png",
+    "../img/character/Ethan/Ethan-tere.png",
+    "../img/character/Ethan/Ethan-default.png",
   ];
   
   talk.addEventListener('click', () => {
