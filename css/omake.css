@@ -40,14 +40,8 @@
 
 /* column styles */
 .column {
-  width: 60%;
+  width: 100%;
   margin: 2em auto;
-}
-.column .small {
-  font-size: 12px;
-}
-.column a {
-  color: black;
 }
 .column h2 {
   text-align: center;
@@ -56,6 +50,9 @@
   align-items: center;
   justify-content: center;
 }
+.flex {
+  display: flex;
+}
 .column h2::before,
 .column h2::after {
   border: 1px #333 solid;
@@ -63,25 +60,19 @@
   width: 2em;
   content: "";
 }
-.column p {
+.column-text {
   font-size: 14px;
+  margin-left: 1em;
 }
-.options {
-  padding: 1em;
-  margin: 1em auto;
-  background: #efefef;
+.dr-options {
+  width: 360px;
+  height: auto;
+}
+.column .small {
   font-size: 12px;
 }
-.options ul {
-  list-style: none;
-}
-.options ul li {
-  margin: .5em;
-  padding: 1em;
-  color: #efefef;
-  background: #333;
-  text-align: center;
-  border: 3px solid #fffffe;
+.column a {
+  color: black;
 }
 
 /* Ethan link styles */
@@ -148,5 +139,22 @@
 @media screen and (max-width: 615px) {
   .background, .column {
     width: 95%;
+  }
+}
+@media screen and (max-width: 1022px) {
+  .flex {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .dr-options {
+    margin-bottom: 1em;
+  }
+  .column-text {
+    margin-left: none;
+  }
+}
+@media screen and (max-width: 482px) {
+  .dr-options {
+    width: 300px;
   }
 }
