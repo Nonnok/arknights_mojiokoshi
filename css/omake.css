@@ -55,8 +55,7 @@
 }
 .column h2::before,
 .column h2::after {
-  border: 1px #333 solid;
-  height: 1px;
+  border: .5px #333 solid;
   width: 2em;
   content: "";
 }
@@ -75,6 +74,30 @@
   color: black;
 }
 
+
+.terminology-box {
+  background: #efefef;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em;
+}
+.terminology-box p {
+  text-align: center;
+}
+.terminology-box a {
+  background: #333;
+  border: 3px solid white;
+  padding: .5em 2.5em;
+  display: block;
+  text-align: center;
+  width: 5em;
+  margin: 0 auto .5em auto;
+  transition: .3s;
+}
+.terminology-box a:hover {
+  transition: .3;
+  opacity: .8;
+}
 /* Ethan link styles */
 .ethan {
   text-align: center;
@@ -136,11 +159,7 @@
     font-size: 12px;
   }
 }
-@media screen and (max-width: 615px) {
-  .background, .column {
-    width: 95%;
-  }
-}
+
 @media screen and (max-width: 1022px) {
   .flex {
     justify-content: center;
@@ -155,6 +174,11 @@
 }
 @media screen and (max-width: 482px) {
   .dr-options {
-    width: 300px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 615px) {
+  .background {
+    width: 95%;
   }
 }

@@ -32,7 +32,7 @@ mask.onclick = () => {
     "img/character/Amiya/Amiya_default.PNG",
     "img/character/Amiya/Amiya_smile.png",
     "img/character/Amiya/Amiya_serious.png",
-    "img/character/Amiya/Amiya_default.PNG",
+    "img/character/Amiya/Amiya_drink.png",
     "img/character/Amiya/Amiya_smile.png",
     "img/character/Amiya/Amiya_default.PNG",
     "img/character/Amiya/Amiya_serious.png",

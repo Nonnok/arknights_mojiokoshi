@@ -71,6 +71,7 @@ body {
   justify-content: space-around;
 }
 .pc-nav li {
+  font-size: 14px;
   display: block;
   padding: 1em;
 }
@@ -257,8 +258,9 @@ footer {
   .normal-menu {
     display: none;
   }
-  .main-image, main {
+  .main-image, main p {
     max-width: 95%;
+    font-size: 12px;
   }
   .top-title {
     font-size: 14px;
@@ -267,6 +269,16 @@ footer {
 @media screen and (max-width: 333px) {
   .toggle-btn {
     right: 12px;
+  }
+}
+
+
+@media screen and (max-width: 615px) {
+  .background {
+    width: 95%;
+  }
+  main {
+    max-width: 95%;
   }
 }
 /* responsive desing end */
