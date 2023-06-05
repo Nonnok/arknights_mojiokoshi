@@ -68,12 +68,11 @@
 }
 
 .operation {
-  margin: 1em;
-  display: grid;
   color: white;
+  display: grid;
   grid-template-columns: 35% auto;
-  width: 75%;
   margin: 1em auto;
+  width: 75%;
 }
 .ninmu-gaiyou {
   padding: 12px;
