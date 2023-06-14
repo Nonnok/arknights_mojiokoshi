@@ -16,9 +16,7 @@ main a {
   display: block;
   color: #333;
   background: #d5d5d5;
-  /* color: white;
-  background: #333; */
-  padding: .2em 0;
+  padding: .2em 0 .2em .5em;
 }
 li p {
   margin: .5em;
@@ -36,12 +34,49 @@ li p {
   margin: 0 auto 2em auto;
 }
 
+.annotation {
+  display: block;
+  width: 80%;
+  margin: 2em auto;
+  color: #333;
+  font-size: 8px;
+}
+
+
+/* search styles */
+.filters {
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(auto-fit, 3em);
+  gap: 1px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.filters div input {
+  display: none;
+}
+.filters div label {
+  display: inline-block;
+  width: 3em;
+  text-align: center;
+  padding: .5em 0;
+  background: #333;
+  color: white;
+}
+.filters div input:checked+label {
+  background: silver;
+  color: #333;
+}
+/* search styles end */
+
+
+
 @media screen and (max-width: 780px) {
-  #dataAccess, main li {
+  #dataAccess, main li, .filters, .annotation {
     width: 100%;
     font-size: 12px;
   }
   main a {
-    font-size: 14px;
+    font-size: 16px;
   }
 }

@@ -52,42 +52,151 @@
     <main>
       <div class="main-content">
         <input type="text" id="dataAccess" onkeyup="myFunction()" placeholder="検索したい用語を入力">
-        <ul id="dataBase">
-          <li>
-            <a>　鉱石病（オリパシー）</a>
+
+        <div class="filters">
+          <div>
+            <input type="radio" name="categories" id="All" value="All" checked/>
+            <label for="All">ALL</label>
+          </div>
+          <div>
+            <input type="radio" name="categories" id="A" value="A">
+            <label for="A">ア</label>
+          </div>
+          <div>
+            <input type="radio" name="categories" id="K" value="K">
+            <label for="K">カ</label>
+          </div>
+          <div>
+            <input type="radio" name="categories" id="S" value="S">
+            <label for="S">サ</label>
+          </div>
+          <div>
+            <input type="radio" name="categories" id="T" value="T">
+            <label for="T">タ</label>
+          </div>
+          <div>
+            <input type="radio" name="categories" id="N" value="N">
+            <label for="N">ナ</label>
+          </div>
+          <div>
+            <input type="radio" name="categories" id="H" value="H">
+            <label for="H">ハ</label>
+          </div>
+          <div>
+            <input type="radio" name="categories" id="M" value="M">
+            <label for="M">マ</label>
+          </div>
+          <div>
+            <input type="radio" name="categories" id="Y" value="Y">
+            <label for="Y">ヤ</label>
+          </div>
+          <div>
+            <input type="radio" name="categories" id="R" value="R">
+            <label for="R">ラ</label>
+          </div>
+          <div>
+            <input type="radio" name="categories" id="W" value="W">
+            <label for="W">ワ</label>
+          </div>
+        </div>
+
+        <p class="annotation">※Allを選択された場合の表示順は制作者の登録順です。無秩序で意味はありません。</p>
+
+        <ul id="dataBase" class="targets">
+          <li class="target" data-category="A">
+            <a><ruby>鉱石病<rt>オリパシー</rt></ruby></a>
             <p>長期に渡って源石やその加工品に接触していると、「鉱石病（オリパシー）」と呼ばれる不治の病に感染しやすいことが発見された。鉱石病に罹患した者は「感染者」と呼ばれる。鉱石病は感染者のアーツ使用能力を増強するが、感染者がアーツを使用する過程で病状を悪化させ、最終的には感染者の命を奪い新たな感染源にしてしまう。この病症に関して既に様々な方面で長期的な研究がなされているが、依然として大きな成果を上げたものはない。</p>
           </li>
-          <li>
-            <a>　感染者</a>
+          <li class="target" data-category="K">
+            <a>感染者</a>
             <p>鉱石病(オリパシー)に感染した人。ほとんどの場合迫害や排斥の対象となり、それまでの生活を続けることは困難になる。</p>
           </li>
-          <li>
-            <a>　龍門</a>
+          <li class="target" data-category="R">
+            <a><ruby>龍門<rt>ロンメン</rt></ruby></a>
             <p>ウェイ・イェンウが統治する移動都市。立ち並ぶビルと発達した交通網を誇り、炎国の経済拠点の一角を担う。</p>
           </li>
-          <li>
-            <a>　ヴィクトリア</a>
+          <li class="target" data-category="A">
+            <a>ヴィクトリア</a>
             <p>ドラコとアスランによって統治される現代国家。テラで最も豊かとされる中央の渓谷地域も含め、広大な領土と豊富な資源を有しているほか、複数の開拓地区と飛び地をも有し、多数の中核国家と隣接している。ヴィクトリア帝国は、権力政治と領土拡張を重視しており、テラに自らの手で国際秩序を確立するという理念の下、その覇権と開拓地の略奪により貴族の利益を保ちながら、ヴィクトリア至上主義の国際体制を築こうとしている。</p>
           </li>
-          <li>
-            <a>　移動都市</a>
+          <li class="target" data-category="A">
+            <a>移動都市</a>
             <p>移動可能な設備の上に建設された都市。恐ろしいほどの破壊力であるうえに頻発する天災に、ほぼ全ての国家は定期的に都市を移動し天災を避ける方法をとることを余儀なくされた。源石エンジンの発明は源石の工業化を実現させ、人々はこれまでよりも遥かに大規模な乗り物を建造しようという試みを始めた。乗り物のサイズ規模は昔の比ではなくなり、最終的に移動都市という概念を作り上げた。様々な天災予測システムを配備しており、天災の種類にもよるが、通常2週間〜2か月以内に災害エリアから安全に脱出できることが保証されている。</p>
           </li>
-          <li>
-            <a>　天災</a>
+          <li class="target" data-category="T">
+            <a>天災</a>
             <p>この世界で頻発している各種自然災害の総称。暴風や雪害、豪雨、洪水のみならず隕石の落下までも含む。天災の発生率は非常に高く、規則性を捉えるのも難しい。多くの文明が都市全体を移動させることで天災を避けている。天災が通り過ぎた後は源石（オリジニウム）と呼ばれる鉱物がよく残されている。研究により、天災は源石の媒介者だということが明らかになった。</p>
           </li>
-          <li>
-            <a>　源石（オリジニウム）</a>
+          <li class="target" data-category="A">
+            <a><ruby>源石<rt>オリジニウム</rt></ruby></a>
             <p>この世界に普遍的に存在する鉱物の一種で、大半は黒く半透明な結晶体である。源石（オリジニウム）は巨大なエネルギーを秘めており、天災を誘発する主たる要因となっている。通常はアーツの分野で運用されており、施術工具やアーツ用品の基本的な材料や触媒が製造されている。源石の補助が無くてはアーツの使用効率は大幅に低下するだろう。現在は源石エンジンの技術革新に伴い、各国でエネルギー源としての利用が増加している。</p>
           </li>
-          <li>
-            <a>　ドラコ</a>
+          <li class="target" data-category="T">
+            <a>ドラコ</a>
             <p>龍やドラゴンの特徴を備えた種族。ヴィクトリアを統治する種族の一つ。</p>
           </li>
-          <li>
-            <a>　アスラン</a>
+          <li class="target" data-category="A">
+            <a>アスラン</a>
             <p>ライオンの特徴を備えた種族。ヴィクトリアを統治する種族の一つ。</p>
+          </li>
+          <li class="target" data-category="A">
+            <a>アーツユニット</a>
+            <p>
+              アーツを使うための源石製の道具。<br>
+              アーツを使うためのエネルギーは源石であるため、通常アーツユニットがなければ十分にアーツを使うことはできない。<br>
+              例外的に感染者は体内の源石を媒体にアーツを行使することができる。<br>
+              但しこの方法を用いた場合、強い負荷がかかり鉱石病の症状の悪化を招き、寿命を縮めるとされる。
+            </p>
+          </li>
+          <li class="target" data-category="A">
+            <a>羽獣</a>
+            <p>羽を持つ鳥類全般。</p>
+          </li>
+          <li class="target" data-category="A">
+            <a>雲獣</a>
+            <p>
+              猫に似た動物。平たい耳・角・短い尻尾といったヤギのような特徴を持つ。<br>
+              炎国ではペットとしての人気が高く、毛並みによって違う呼び方をする。
+            </p>
+          </li>
+          <li class="target" data-category="A">
+            <a>海</a>
+            <p>
+              成分は地球の海と同じだが、海の怪物と呼ばれる生き物たちのため人々が近づけない危険な場所。<br>
+              海には源石が存在せず、かつて海中にはエーギルと呼ばれる国が存在していた。陸上を上回る繁栄を遂げたエーギルも海の怪物に脅かされ、エーギル人は陸上国家のイベリアへ追いやられている。
+            </p>
+          </li>
+          <li class="target" data-category="A">
+            <a>海の怪物</a>
+            <p>
+              テラ世界の海に生息する異形の生き物たち。<br>
+              呼称<br>
+              下級個体：恐魚　上位個体：シーボーン　最上位個体：アレ<br>
+              一種の侵食能力を持ち、先民を海の怪物に変貌させることができる。また世代を重ね急速に進化する。<br>
+              アビサルハンターと共に、絶大な源石耐性を持つ。
+            </p>
+          </li>
+          <li class="target" data-category="A">
+            <a>アビサルハンター</a>
+            <p>
+              海の怪物に対抗するためにエーギルの人々が作り出した、怪物とエーギル族の融合体。<br>
+              海の怪物と共に、絶大な源石耐性を持つ。
+            </p>
+          </li>
+          <li class="target" data-category="A">
+            <a><ruby>先民<rt>エーシェンツ</rt></ruby></a>
+            <p>
+              多種多様な動物や神話上の存在の特徴を有した人型生物の総称。<br>
+              テラ世界では「ヒト」と全く同じ種族は確認されておらず、先民が「人間」に代わって文明を築いている。<br>
+              鉱石病への耐性が低く、感染しやすい。<br>
+              平均寿命はヒトより長いが、種族によって大きく異なる。<br>
+              テラにおいて地球の動物を指す言葉は、その特徴を持つ種族に対するスラングのように扱われることが多い。<br>
+              一方で、地球の動物がそのままの姿でテラに登場することはほぼ無く、「動物」に当たる存在は「◯獣」と呼ばれる生物として描かれる。
+            </p>
+          </li>
+          <li class="target" data-category="A">
+            <a>エリートオペレーター</a>
+            <p>ロドス・アイランドのオペレーターの中でも、上位に位置付けられる者。<br>ロドス・アイランドの切り札となる強大な力を持つだけでなく、その職務で本人の生命以上に重い責任を担う存在。</p>
           </li>
         </ul>
       </div>
@@ -100,5 +209,6 @@
 
   <script src="js/main.js"></script>
   <script src="js/terminology.js"></script>
+  <script src="js/search.js"></script>
 </body>
 </html>
