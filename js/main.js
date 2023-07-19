@@ -11,6 +11,30 @@ mask.onclick = () => {
   nav.classList.toggle("open");
 }
 
+// change mode
+let changeButton = document.getElementById("mode_change");
+let characterName = document.querySelectorAll('.character-name');
+let blowing = document.querySelectorAll('.blowing');
+let options = document.querySelectorAll('.options');
+let main = document.querySelector('main');
+let body = document.querySelector('body');
+
+function changeMode() {
+  changeButton.classList.toggle("white");
+  main.classList.toggle("main_dark");
+  body.classList.toggle("body_dark");
+  characterName.forEach(element => {
+    element.classList.toggle("character-name_dark");
+  });
+  blowing.forEach(element => {
+    element.classList.toggle("blowing_dark");
+  });
+  options.forEach(element => {
+    element.classList.toggle("options_dark");
+  });
+}
+
+
 // アーミヤおまけ会話
 {
   const talk = document.getElementById('operater');

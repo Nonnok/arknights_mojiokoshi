@@ -11,6 +11,7 @@
   z-index: 1;
 }
 
+
 /* pagetop link styles */
 .pagetop {
   height: 50px;
@@ -77,6 +78,7 @@
 .ninmu-gaiyou {
   padding: 12px;
   background:rgba(0, 0, 0, .7);
+  -ms-overflow-style: none;
 }
 
 .story .ep {
@@ -111,8 +113,11 @@
   color: #333;
   padding: 12px;
   background: #efefef;
+  -ms-overflow-style: none;
 }
-
+.ninmu-gaiyou::-webkit-scrollbar, .story-gaiyou::-webkit-scrollbar {
+  display: none;
+}
 
 /* short-nav-btn styles */
 .story-short-nav-container {
@@ -190,6 +195,7 @@
   background: #efefef;
   line-break: strict;
   margin: 12px 0;
+  border: 1px solid #333;
 }
 .proposal {
   padding: 1em
@@ -273,6 +279,49 @@ details p {
   padding: .5em 0;
 }
 /* control button styles end */
+
+
+/* mode change button styles */
+.mode_change {
+  width: 8em;
+  padding: .5em 1em;
+  cursor: pointer;
+  background: #333;
+  color: white;
+  border: none;
+  margin-right: 1em;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.white {
+  color: #333;
+  background: #efefef;
+  border: #333 1px solid;
+}
+
+.character-name_dark {
+  background: gray;
+  color: #efefef;
+}
+.blowing_dark {
+  background: #333;
+  color: #efefef;
+  border: 1px solid gray;
+}
+.options_dark {
+  background: #333;
+}
+.main_dark {
+  background: #333;
+}
+.body_dark {
+  color: #efefef;
+}
+
 
 /* responsive styles */
 @media screen and (min-width: 800px) {
